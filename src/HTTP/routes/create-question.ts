@@ -5,7 +5,7 @@ import { schema } from '../../db/schema/index.ts'
 
 export const createQuestionRoute: FastifyPluginCallbackZod = (app) => {
   app.post(
-    '/rooms/:roomId/questions',
+    '/room/:roomId/questions',
     {
       schema: {
         params: z.object({

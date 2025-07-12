@@ -7,9 +7,9 @@ import {
 } from 'fastify-type-provider-zod'
 import { env } from './env.ts'
 import { createQuestionRoute } from './HTTP/routes/create-question.ts'
-import { createRoomRoute } from './HTTP/routes/create-rooms.ts'
+import { createRoomRoute } from './HTTP/routes/create-room.ts'
+import { getRoomsRoute } from './HTTP/routes/get-room.ts'
 import { getRoomQuestions } from './HTTP/routes/get-room-questions.ts'
-import { getRoomsRoute } from './HTTP/routes/get-rooms.ts'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 

@@ -6,7 +6,7 @@ import { schema } from '../../db/schema/index.ts'
 
 export const getRoomQuestions: FastifyPluginCallbackZod = (app) => {
   app.get(
-    '/rooms/:roomId/questions',
+    '/room/:roomId/questions',
     {
       schema: {
         params: z.object({
